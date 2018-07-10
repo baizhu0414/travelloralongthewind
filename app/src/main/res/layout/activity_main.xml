@@ -11,11 +11,10 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="247dp"
-            android:src="@drawable/o1" />
+        <ImageSwitcher
+            android:id="@+id/imageSwicher"
+            android:layout_width="match_parent"
+            android:layout_height="247dp"></ImageSwitcher>
 
     </LinearLayout>
 
@@ -53,34 +52,40 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="什么也没有哦~"
-            android:textSize="18sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="#标签"
-            android:textColor="@color/colorAccent"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="什么也没有哦~"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="start"
-            android:text="拍摄于2018-07-09"
-            android:textColor="@color/colorPrimary" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#标签"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="拍摄于2018-07-09"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="全部**条评论" />
+        </LinearLayout>
 
         <ListView
             android:id="@+id/listview"
