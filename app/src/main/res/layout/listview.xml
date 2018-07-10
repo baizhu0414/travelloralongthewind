@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="80dp">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -11,10 +11,12 @@
         android:gravity="top"
         android:orientation="vertical">
 
+        <!--说明：centerInside表示按比例缩放图片，使得图片长 (宽)的小于等于视图的相应维度。-->
         <ImageView
             android:id="@+id/img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:scaleType="centerInside"
             android:src="@android:drawable/btn_star_big_off" />
 
     </LinearLayout>

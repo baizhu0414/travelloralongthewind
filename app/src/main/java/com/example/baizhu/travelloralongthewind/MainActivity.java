@@ -19,7 +19,10 @@ import android.widget.ViewSwitcher;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+*
+* 崔杨2018-7-10
+ */
 public class MainActivity extends Activity implements ViewSwitcher.ViewFactory,
         View.OnTouchListener {
 
@@ -31,7 +34,13 @@ public class MainActivity extends Activity implements ViewSwitcher.ViewFactory,
 //    private int index=0; //图片序号
 //    private int[ ] images;//存放图片id
 
-    // 图片数组
+    //图标图片数组(从数据库取)
+    private int[] iconPictures = { R.drawable.a1, R.drawable.a2,
+            R.drawable.a3,R.drawable.a4,R.drawable.a5,R.drawable.a6};
+    private String[] title = { "abc","acb","bac","bca","cab","cba"};//name
+    private String[] introduction = { "abc say what??","acb say what??",
+            "bac say what??","bca say what??","cab say what??","cba say what??"};
+    // 背景图片数组(从数据库取)
     private int[] arrayPictures = { R.drawable.o1, R.drawable.o2,
             R.drawable.o3};
     // 要显示的图片在图片数组中的Index
@@ -69,10 +78,12 @@ public class MainActivity extends Activity implements ViewSwitcher.ViewFactory,
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "选中了："+",id="+id, Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(getApplicationContext(), "选中了："+title[position]+" 他(她)的id="+id, Toast.LENGTH_SHORT).show();
             }
         });
 
+        //线程方法难以控制图片大小，换成手动触发事件
         //创建线程实现动画播放效果
 //        images = new int[]{
 //                R.drawable.o1,
@@ -134,11 +145,11 @@ public class MainActivity extends Activity implements ViewSwitcher.ViewFactory,
 
             Thing thing = new Thing();
 
-            thing.setPicture(R.drawable.ic_launcher_background);
+            thing.setPicture(iconPictures[i%6]);
 
-            thing.setTitle("我是标题" + i);
+            thing.setTitle(title[i%6]);
 
-            thing.setIntroduce("我是简介" + i);
+            thing.setIntroduce(introduction[i%6]);
 
             lists.add(thing);
 
