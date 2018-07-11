@@ -21,7 +21,6 @@ import android.widget.ViewSwitcher;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /*
  *
  * 崔杨2018-7-10
@@ -136,7 +135,6 @@ public class MainActivity extends Activity implements ViewSwitcher.ViewFactory,
         imageSwicher.setFactory(this);
         // 设置ImageSwitcher左右滑动事件
         imageSwicher.setOnTouchListener(this);
-
 
     }
 
