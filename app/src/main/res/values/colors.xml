@@ -148,7 +148,7 @@
 
     <!--非圆形按钮不可点击-->
 
-    <color name="fill_no_click">#CCCCCC</color>
+    <color name="fill_no_click">#cccccc</color>
 
 
 
