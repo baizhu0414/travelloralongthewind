@@ -5,4 +5,31 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="BottomAnimDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--设置透明需要下面两个属性一起使用-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button.Small</item>
+    </style>
+
+    <!--自定义dialog主题-->
+    <style name="BottomAnimDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>
+    </style>
+
+    <!--toolBar的主题-->
+    <style name="ToolbarTheme" parent="@style/AppTheme">
+        <item name="android:actionMenuTextColor">@color/text_black2</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--横线统一的样式-->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.2dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
 </resources>
