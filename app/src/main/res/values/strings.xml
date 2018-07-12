@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">~~风之旅人~~</string>
+    <string name="Prompt_word">提示 \n 1.一个好的游记标题 \n 2.标题可以进行编辑
+    </string>
 </resources>

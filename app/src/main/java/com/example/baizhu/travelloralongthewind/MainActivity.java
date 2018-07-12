@@ -72,6 +72,10 @@ public class MainActivity extends Activity implements ViewSwitcher.ViewFactory,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //跳转到刘演超的页面
+       // Intent intent = new Intent(MainActivity.this,personal_pageActivity.class);
+        //Bundle bundle=new Bundle();
+
         listview = (ListView) findViewById(R.id.listview);
         //初始化数据
         lists = getLists();
@@ -83,6 +87,8 @@ public class MainActivity extends Activity implements ViewSwitcher.ViewFactory,
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Toast.makeText(getApplicationContext(), "选中了：" + title[position] + " 他(她)的id=" + id, Toast.LENGTH_SHORT).show();
+                //bundle.putString("name", title[position]); //给Bundle添加key-value值对
+                //startActivity(intent);
             }
         });
 

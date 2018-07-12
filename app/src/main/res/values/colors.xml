@@ -62,7 +62,7 @@
 
     <!-- 绿色-->
 
-    <color name="green">#00B700</color>
+    <color name="green">#48b5fa</color>
 
     <!--透明背景-->
 
@@ -98,7 +98,7 @@
 
 
 
-    <color name="authen_line">#dddddd</color>
+    <color name="authen_line">#e6e6e6</color>
 
 
 
